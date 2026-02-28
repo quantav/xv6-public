@@ -6,5 +6,4 @@
 
  (asm-mode
   (indent-tabs-mode . nil)
-  (tab-width . 4)
-  (asm-comment-column . 40)))
+  (tab-width . 4))
