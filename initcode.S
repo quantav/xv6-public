@@ -30,3 +30,5 @@ argv:
   .long init
   .long 0
 
+.section .note.GNU-stack,"",@progbits
+

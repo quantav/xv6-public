@@ -91,3 +91,5 @@ gdtdesc:
   .word   (gdtdesc - gdt - 1)
   .long   gdt
 
+.section .note.GNU-stack,"",@progbits
+
