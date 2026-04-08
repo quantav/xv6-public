@@ -15,6 +15,9 @@ struct cpu cpus[NCPU];
 int ncpu;
 uchar ioapicid;
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Warray-bounds"
+
 static uchar
 sum(uchar *addr, int len)
 {
@@ -139,3 +142,5 @@ mpinit(void)
     outb(0x23, inb(0x23) | 1);  // Mask external interrupts.
   }
 }
+
+#pragma GCC diagnostic pop
